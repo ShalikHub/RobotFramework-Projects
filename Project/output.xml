@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200229 09:03:51.918" generator="Robot 3.2b2 (Python 2.7.14 on darwin)">
+<suite source="/Users/shaliksapkota/Desktop/test_cases/Project/testing1.robot" id="s1" name="Testing1">
+<test id="s1-t1" name="MyFirstTest">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Hello World...</arg>
+</arguments>
+<msg timestamp="20200229 09:03:52.019" level="INFO">Hello World...</msg>
+<status status="PASS" endtime="20200229 09:03:52.019" starttime="20200229 09:03:52.018"></status>
+</kw>
+<status status="PASS" endtime="20200229 09:03:52.019" critical="yes" starttime="20200229 09:03:52.017"></status>
+</test>
+<status status="PASS" endtime="20200229 09:03:52.020" starttime="20200229 09:03:51.928"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Testing1" pass="1">Testing1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
