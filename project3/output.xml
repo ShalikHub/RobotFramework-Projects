@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200325 18:30:16.450" generator="Robot 3.2b2 (Python 2.7.14 on darwin)">
+<suite source="/Users/shaliksapkota/Desktop/test_cases/project3/testsuit.robot" id="s1" name="Testsuit">
+<test id="s1-t1" name="MyFirstTest">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Hello World</arg>
+</arguments>
+<msg timestamp="20200325 18:30:03.969" level="INFO">Hello World</msg>
+<status status="PASS" endtime="20200325 18:30:03.970" starttime="20200325 18:30:03.969"></status>
+</kw>
+<status status="PASS" endtime="20200325 18:30:03.970" critical="yes" starttime="20200325 18:30:03.967"></status>
+</test>
+<test id="s1-t2" name="FirstSeleniumTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https:google.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200325 18:30:03.975" level="INFO">Opening browser 'chrome' to base url 'https:google.com'.</msg>
+<status status="PASS" endtime="20200325 18:30:10.258" starttime="20200325 18:30:03.974"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20200325 18:30:10.262" starttime="20200325 18:30:10.259"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>Automation step by step</arg>
+</arguments>
+<msg timestamp="20200325 18:30:10.263" level="INFO">Typing text 'Automation step by step' into text field 'name=q'.</msg>
+<status status="PASS" endtime="20200325 18:30:10.744" starttime="20200325 18:30:10.262"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>Enter</arg>
+</arguments>
+<msg timestamp="20200325 18:30:10.747" level="INFO">Sending key(s) (u'Enter',) to name=q element.</msg>
+<msg timestamp="20200325 18:30:11.141" level="INFO">Sending keys Enter</msg>
+<status status="PASS" endtime="20200325 18:30:11.199" starttime="20200325 18:30:10.745"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>name=btnk</arg>
+</arguments>
+<msg timestamp="20200325 18:30:11.201" level="INFO">Clicking button 'name=btnk'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200325 18:30:21.598" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200325 18:30:21.599" starttime="20200325 18:30:21.258"></status>
+</kw>
+<msg timestamp="20200325 18:30:21.607" level="FAIL">Button with locator 'name=btnk' not found.</msg>
+<status status="FAIL" endtime="20200325 18:30:21.608" starttime="20200325 18:30:11.200"></status>
+</kw>
+<status status="FAIL" endtime="20200325 18:30:21.608" critical="yes" starttime="20200325 18:30:03.972">Button with locator 'name=btnk' not found.</status>
+</test>
+<test id="s1-t3" name="SampleLoginTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://opensource-demo.orangehrmlive.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200325 18:30:21.613" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com'.</msg>
+<status status="PASS" endtime="20200325 18:30:26.320" starttime="20200325 18:30:21.612"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>Admin</arg>
+</arguments>
+<msg timestamp="20200325 18:30:26.321" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" endtime="20200325 18:30:26.474" starttime="20200325 18:30:26.320"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>admin123</arg>
+</arguments>
+<msg timestamp="20200325 18:30:26.475" level="INFO">Typing text 'admin123' into text field 'id=txtPassword'.</msg>
+<status status="PASS" endtime="20200325 18:30:26.618" starttime="20200325 18:30:26.475"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=login</arg>
+</arguments>
+<msg timestamp="20200325 18:30:26.620" level="INFO">Clicking button 'id=login'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200325 18:30:26.969" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200325 18:30:26.969" starttime="20200325 18:30:26.642"></status>
+</kw>
+<msg timestamp="20200325 18:30:26.971" level="FAIL">Button with locator 'id=login' not found.</msg>
+<status status="FAIL" endtime="20200325 18:30:26.971" starttime="20200325 18:30:26.619"></status>
+</kw>
+<doc>This is a simple login Test</doc>
+<status status="FAIL" endtime="20200325 18:30:26.971" critical="yes" starttime="20200325 18:30:21.610">Button with locator 'id=login' not found.</status>
+</test>
+<status status="FAIL" endtime="20200325 18:30:26.973" starttime="20200325 18:30:16.456"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="1">Critical Tests</stat>
+<stat fail="2" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="Testsuit" pass="1">Testsuit</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
