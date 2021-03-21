@@ -7,3 +7,7 @@ Learning project for robot framework
 <h1>Installing RobotFramework</h1>
 <h1> All About RobotFramework</h1>
 pip install robotframework
+
+<h2> Robot framework guide for begginers </h2>
+
+First phase of Learning
