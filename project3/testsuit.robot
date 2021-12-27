@@ -26,3 +26,6 @@ SampleLoginTest
     Click Element   id=Welcome
     Click Element   id=Logout
     Log    Test Completed
+    
+    
+    *** keywords **
